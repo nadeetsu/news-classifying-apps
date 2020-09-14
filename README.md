@@ -1,5 +1,4 @@
 ## News Classifying Apps ##
--=-=-=-=-=-=-=-=-=-=-=
 
 ##  Requirement
 1. Anaconda
