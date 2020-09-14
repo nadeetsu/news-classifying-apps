@@ -1,0 +1,100 @@
+{% extends "containers/base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+                <div class="papr-container-main">
+                    <div data-elementor-type="wp-page" data-elementor-id="18" class="elementor elementor-18" data-elementor-settings="[]">
+                        <div class="elementor-inner">
+                            <div class="elementor-section-wrap">
+                                <section class="elementor-element elementor-element-afd55e3 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section mt-92" data-id="afd55e3" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-no">
+                                        <div class="elementor-row">
+                                            <div class="elementor-element elementor-element-0f7a277 elementor-column elementor-col-100 elementor-top-column" data-id="0f7a277" data-element_type="column">
+                                                <div class="elementor-column-wrap  elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-b51a110 elementor-widget elementor-widget-axilnews-blog-post-banner" data-id="b51a110" data-element_type="widget" data-widget_type="axilnews-blog-post-banner.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="axil-single-lg2 clearfix">
+                                                                    <div class="axil-single-wrp">
+                                                                        <div class="banner-home__with-post">
+                                                                            <div class="banner-left-content p-l-md-80 load-anim-wrapper lazyloaded">
+                                                                                <div class="post-title-wrapper post-meta-primary">
+                                                                                    <h3 class="m-t-xs-20 m-b-xs-10 axil-post-title hover-line color-white txt-shadow load-anim">
+                                                                                            This is the right place!
+                                                                                    </h3>
+                                                                                    <p class="big color-white m-b-xs-20 load-anim">Tentukan jenis konten berita di sini! </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="abouts section-padding woo bg-light-darks">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-5 align-self-center">
+                                                <div class="feature-image">
+                                                    <img src="{{ url_for('static', filename='images/data-prc.svg') }}" alt="welcome" draggable="false"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 align-self-center">
+                                            <div class="section-heading text-left">
+                                                <h2 class="mb-30 font-46">Welcome!</h2>
+                                                <p>Ini adalah aplikasi yang dapat membantu menentukan apa saja yang mendominasi dari suatu berita
+                                                    apakah positif, negatif, atau netral. Aplikasi ini menerapkan Long Short Term Memory (LSTM)
+                                                   pada konten berita yang diproses</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                                <section id="features" class="section features">
+                                    <div class="container">
+                                        <div class="section-heading text-center">
+                                            <h2 class="font-46">Cara mudah gunakan aplikasi ini</h2>
+                                        </div>
+                                        <div class="box-content-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="content text-center">
+                                                        <!-- <i class="fas fa-newspaper"></i> -->
+                                                        <img src="{{ url_for('static', filename='images/newspaper.svg') }}"/>
+                                                        <h3>Choose content</h3>
+                                                        <p>Masukkan konten berita dari sumber apapun yang ingin diprediksi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="content text-center">
+                                                        <!-- <i class="fas fa-spinner"></i> -->
+                                                        <img src="{{ url_for('static', filename='images/processing.svg') }}"/>
+                                                        <h3>Process</h3>
+                                                        <p>Sistem akan memproses konten yang telah Anda pilih dengan menggunakan LSTM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="content text-center">
+                                                        <!-- <i class="fa fa-file-exclamation"></i> -->
+                                                        <img src="{{ url_for('static', filename='images/classified.svg') }}"/>
+                                                        <h3>Predict</h3>
+                                                        <p>Hasil prediksi konten yang dipilih akan ditampilkan disini</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

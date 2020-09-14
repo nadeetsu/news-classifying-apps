@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - News Classifier Apps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/4jew.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/4nbk.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}">
+    <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+    <div class="wrp">
+        <main class="main-content">
+            <div id="page" class="papr-main-content">
+                <div class="home page-template page-template-elementor_header_footer page page-id-18 wp-embed-responsive theme-papr woocommerce-no-js no-sidebar full-width axil-sticky-menu menu-open-click elementor-default elementor-template-full-width elementor-page elementor-page-18">
+                    <header class="page-header">
+                        <div class="navbar bg-white axil-header axil-header-one">
+                            <div class="container">
+                                <div class="navbar-inner">
+                                    <div class="brand-logo-container">
+                                        <a class="site-logo" href="/">
+                                            <img class=" brand-logo lazyloaded" src="{{ url_for('static', filename='images/logo.svg') }}" alt="logo"/>
+                                        </a>
+                                    </div>
+                                    <nav class="main-nav-wrapper ml-auto">
+                                        <ul id="main-menu" class="main-navigation list-inline">
+                                            <li id="menu-item-1096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1096">
+                                                <a href="{{ url_for('classifiers')}}">Content Classifier</a>
+                                            </li>
+                                            <li id="menu-item-1096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1096">
+                                                <a href="{{ url_for('classifylink')}}">Link Classifier</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <!-- content page -->
+                {% block content %}{% endblock %}
+                <!-- end content page -->
+                <footer class="page-footer">
+                    <div class="container">
+                        <div class="footer-mid">
+                            <div class="row align-items-center">
+                                <div class="col-md">
+                                    <div class="footer-logo-container">
+                                        <a class="footer-logo" href="#">
+                                            <img src="{{ url_for('static', filename='images/logo-wh.svg') }}" alt="logo-footer" width="55px"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="footer-social-share-wrapper">
+                                        <div class="footer-bottom">
+                                            <p class="axil-copyright-txt cr-txt text-white">Copyright © 2020 News Classifiers | All right reserved </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
