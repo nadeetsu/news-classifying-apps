@@ -23,7 +23,7 @@ mohon disesuaikan dengan versi masing-masing
 3. Install semua requirements/library python (Sesuaikan dengan versi pip: pip/pip3)
 > pip install -r requirements.txt
 
-4. Jalankan file*
+4. Jalankan file**
 a) Data Cleaning
 > masuk ke folder /prepare-data
 > jalankan file 1_clean_duplicate.py
@@ -46,4 +46,4 @@ c) Model Testing
 
 Note:
 * : optional
-Untuk proses cleaning sampai training dan testing model ada di direktori lstm-model (Semua tahap tidak perlu dilakukan jika hanya ingin menjalankan aplikasinya saja)
+** : Untuk proses cleaning sampai training dan testing model ada di direktori lstm-model (Semua tahap tidak perlu dilakukan jika hanya ingin menjalankan aplikasinya saja)
